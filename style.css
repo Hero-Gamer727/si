@@ -1,0 +1,16 @@
+canvas{
+    border-style: ridge;
+    border-width: 5px;
+    border-color: steelblue;
+    margin-top: 100px;
+    animation-name:animation;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+   border-radius: 20px;
+    
+}
+
+@keyframes animation{
+    from{box-shadow:1px 1px 38px red;}
+to{box-shadow: 1px 1px 38px rgb(2, 254, 2) ;}
+}

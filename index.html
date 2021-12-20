@@ -1,0 +1,58 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Identification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+
+
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="background-color:rgb(245, 218, 66);">
+  <center>
+    <div style="background-color: white;">
+      <h1 style="color:blue; ">Sketch Identification<button id="show_button" class="btn btn-info" data-toggle="modal"
+          data-target="#show_sketches_modal" style="font-size: 15px; float: right;">Show
+          Sketches</button></h1>
+    </div>
+    <!-- codes for modal -->
+    <div class="modal fade" id="show_sketches_modal">
+     
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h3 class="modal-title">Sketches</h3>
+          </div>
+          <div class="modal-body">
+            <img class="img-responsive" src="sketch1.png">
+            <img class="img-responsive" src="sketch2.png">
+
+
+            </div>
+
+
+
+        </div>
+
+      </div>
+
+    <h3>Label: <span id="label_text"></span></h3>
+    <br><br>
+    <h3>Confidence: <span id="accuracy_number"></span></h3>
+    <br>
+    <button class="btn btn-danger" onclick="clear_canvas()">Clear Canvas</button>
+  </center>
+  <script src="main.js"></script>
+</body>
+
+</html>
